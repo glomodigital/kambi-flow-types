@@ -1,5 +1,5 @@
 // @flow
-export type ExtendedEventParticipant = $ReadOnly<{|
+declare type ExtendedEventParticipant = $ReadOnly<{|
   startNumber?: number,
   startPosition?: number,
   driverName?: string,
@@ -28,7 +28,7 @@ export type ExtendedEventParticipant = $ReadOnly<{|
   ],
 |}>
 
-export type EventParticipant = $ReadOnly<{|
+declare type EventParticipant = $ReadOnly<{|
   participantId?: number,
   name?: string,
   extended?: ExtendedEventParticipant,
