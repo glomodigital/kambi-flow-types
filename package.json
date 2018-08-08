@@ -1,0 +1,23 @@
+{
+  "name": "kambi-flow-types",
+  "version": "1.0.0",
+  "description": "A collection of kambi related flow types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glomodigital/kambi-flow-types.git"
+  },
+  "keywords": [
+    "kambi",
+    "flow"
+  ],
+  "author": "jack@glomo.se",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glomodigital/kambi-flow-types/issues"
+  },
+  "homepage": "https://github.com/glomodigital/kambi-flow-types#readme"
+}
