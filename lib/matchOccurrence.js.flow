@@ -1,11 +1,11 @@
 // @flow
 export type Player = $ReadOnly<{|
-  id?: number,
+  id: number,
   name?: string,
 |}>
 
 export type MatchOccurrence = $ReadOnly<{|
-  id?: number,
+  id: number,
   eventId?: number,
   occurrenceTypeId?: string,
   secondInPeriod?: number,

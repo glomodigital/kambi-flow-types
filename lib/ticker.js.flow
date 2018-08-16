@@ -4,5 +4,5 @@ export type Ticker = $ReadOnly<{|
   type?: string,
   minute?: number,
   message?: string,
-  id?: number,
+  id: number,
 |}>

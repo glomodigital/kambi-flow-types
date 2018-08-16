@@ -17,7 +17,7 @@ import type { LiveStatistics } from './liveStatistics'
  * BetOffer Type
  */
 export type BetOffer = $ReadOnly<{|
-  id?: number,
+  id: number,
   suspended?: boolean,
   closed?: string,
   criterion?: Object,
@@ -60,7 +60,7 @@ export type BetOffer = $ReadOnly<{|
 |}>
 
 export type KambiEvent = $ReadOnly<{|
-  id?: number,
+  id: number,
   name?: string,
   englishName?: string,
   homeName?: string,
@@ -97,7 +97,7 @@ export type KambiEvent = $ReadOnly<{|
 |}>
 
 export type LiveData = $ReadOnly<{|
-  eventId?: number,
+  eventId: number,
   matchClock?: MatchClock,
   score?: Score,
   statistics?: Statistics,
