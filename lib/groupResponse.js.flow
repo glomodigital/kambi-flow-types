@@ -1,7 +1,0 @@
-// @flow
-import type { Group } from "./group";
-
-export type GroupResponse = $ReadOnly<{|
-  group: Group,
-  groups: Array<Group>
-|}>;
