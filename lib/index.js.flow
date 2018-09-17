@@ -117,17 +117,17 @@ export type GroupResponse = $ReadOnly<{|
 
 export type Group = $ReadOnly<{|
   id: number,
-  name: string,
+  name?: string,
   boCount: number,
-  uri: string,
-  englishName: string,
-  groups: Array<Group>,
+  uri?: string,
+  englishName?: string,
+  groups?: Array<?Group>,
   sport: Sport,
   eventCount: number,
-  secondsToNextEvent: number,
-  termKey: string,
-  pathTermId: string,
-  sortOrder: string,
+  secondsToNextEvent?: number,
+  termKey?: string,
+  pathTermId?: string,
+  sortOrder?: string,
 |}>
 
 export type ExtendedEventParticipant = $ReadOnly<{|
