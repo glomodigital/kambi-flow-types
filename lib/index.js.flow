@@ -111,6 +111,40 @@ export type GroupPath = $ReadOnly<{|
   termKey?: string,
 |}>
 
+export type InPlayResponse = $ReadOnly<{|
+  events: Array<?Event>,
+  terms: Array<?Term>,
+  activeTermIds: Array<?string>,
+  soonMode: 'HOURLY' | 'DAILY' | 'MONTHLY',
+  categoryGroups: Array<?CategoryGroup>,
+  activeCategories: Array<?string>,
+  activeEventTypes: Array<?string>,
+  eventTypes: Array<?string>,
+  defaultEventType: string,
+|}>
+
+export type CategoryGroup = $ReadOnly<{|
+  categoryGroupName: string,
+  categories: Array<?Category>,
+  localizedName: string,
+|}>
+
+export type Category = $ReadOnly<{|
+  id: number,
+  englishName: string,
+  localizedName: string,
+|}>
+
+export type Term = $ReadOnly<{|
+  type: string,
+  id: string,
+  termKey: string,
+  localizedName: string,
+  parentId: string,
+  englishName: string,
+  value?: string,
+|}>
+
 export type GroupResponse = $ReadOnly<{|
   group: Group,
 |}>
