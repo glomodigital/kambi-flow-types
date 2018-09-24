@@ -117,7 +117,7 @@ export type GroupPath = $ReadOnly<{|
   termKey?: string,
 |}>
 
-export type InPlayResponse = $ReadOnly<{|
+export type ListViewResponse = $ReadOnly<{|
   events: Array<?Event>,
   terms: Array<?Term>,
   activeTermIds: Array<?string>,
