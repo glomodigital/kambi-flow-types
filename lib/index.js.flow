@@ -101,6 +101,12 @@ export type KambiResponseType = $ReadOnly<{|
 export type Event = {|
   betOffers: Array<BetOffer>,
   liveData: LiveData | null,
+  event: KambiEvent,
+|}
+
+export type GlomoEvent = {|
+  betOffers: Array<BetOffer>,
+  liveData: LiveData | null,
   ...KambiEvent,
 |}
 
