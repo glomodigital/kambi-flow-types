@@ -441,3 +441,20 @@ export type VisualizationOccurrence = $ReadOnly<{|
     |},
   |},
 |}>
+
+export type KambiHighlightedResponse = $ReadOnly<{|
+  groups: Array<KambiHighlightedGroup>
+|}>
+
+export type KambiHighlightedGroup = $ReadOnly<{|
+    boCount?: number,
+    englishName?: string,
+    eventCount: number,
+    groups?: Array<KambiHighlightedGroup>,
+    id: number,
+    name: string,
+    pathTermId?: string,
+    sortOrder?: number,
+    sport: string,
+    termKey: string
+  |}>
